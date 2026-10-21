@@ -1,0 +1,19 @@
+[10/20/2026-15:31:37] [TRT] [W] WARNING The logger passed into createInferRuntime differs from one already registered for an existing builder, runtime, or refitter. So the current new logger is ignored, and TensorRT will use the existing one which is returned by nvinfer1::getLogger() instead.
+
+=== Batch 1 ===
+PyTorch FP32: 1.9484 ms
+TensorRT FP32: 0.8331 ms | speedup=2.34x | max_error=0.003281 | top1=100.00%
+TensorRT FP16: 0.2937 ms | speedup=6.63x | max_error=0.014122 | top1=100.00%
+
+=== Batch 8 ===
+PyTorch FP32: 3.4753 ms
+TensorRT FP32: 1.5483 ms | speedup=2.24x | max_error=0.004418 | top1=100.00%
+TensorRT FP16: 0.5280 ms | speedup=6.58x | max_error=0.021438 | top1=100.00%
+
+=== Batch 32 ===
+PyTorch FP32: 7.6124 ms
+TensorRT FP32: 5.1113 ms | speedup=1.49x | max_error=0.006119 | top1=100.00%
+TensorRT FP16: 1.6769 ms | speedup=4.54x | max_error=0.028236 | top1=100.00%
+
+Saved: /mnt/d/EE542/lab8/results/part2_benchmark.csv
+Saved: /mnt/d/EE542/lab8/results/part2_benchmark.json

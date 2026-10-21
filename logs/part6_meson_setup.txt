@@ -1,0 +1,29 @@
+The Meson build system
+Version: 1.3.2
+Source dir: /opt/mellanox/doca/samples/doca_gpunetio/gpunetio_simple_receive
+Build dir: /tmp/build
+Build type: native build
+Program cat found: YES (/usr/bin/cat)
+Project name: DOCA_SAMPLE
+Project version: 3.5.0098
+C compiler for the host machine: cc (gcc 13.3.0 "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0")
+C linker for the host machine: cc ld.bfd 2.42
+C++ compiler for the host machine: c++ (gcc 13.3.0 "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0")
+C++ linker for the host machine: c++ ld.bfd 2.42
+Cuda compiler for the host machine: nvcc (nvcc 13.0.88
+Build cuda_13.0.r13.0/compiler.36424714_0)
+Cuda linker for the host machine: nvcc nvlink 13.0.88
+Build cuda_13.0.r13.0/compiler.36424714_0
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 1.8.1
+Run-time dependency doca-common found: YES 3.5.0098
+Run-time dependency doca-gpunetio found: YES 3.5.0098
+Run-time dependency doca-argp found: YES 3.5.0098
+Run-time dependency doca-eth found: YES 3.5.0098
+Run-time dependency doca-flow found: YES 3.5.0098
+meson.build:57: WARNING: Module CUDA has no backwards or forwards compatibility and might not exist in future releases.
+Run-time dependency CUDA (modules: cudart, cuda) found: YES 13.0 (/usr/local/cuda)
+Build targets in project: 1
+
+Found ninja-1.11.1 at /usr/bin/ninja

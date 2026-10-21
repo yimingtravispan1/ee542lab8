@@ -1,0 +1,97 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "pytorch": "2.11.0+cu128",
+  "pytorch_cuda": "12.8",
+  "tensorrt": "11.4.0.106",
+  "seed": 542,
+  "warmup": 50,
+  "repeats": 200,
+  "timing": "CUDA events around repeated inference on a non-default stream",
+  "input": "Random normal CUDA tensors; FP16 uses rounded copies",
+  "pytorch_precision": "IEEE FP32",
+  "tensorrt_precision": "As configured in saved engines",
+  "correctness_samples": "One batch per batch size: 1, 8, 32",
+  "results": [
+    {
+      "implementation": "PyTorch FP32",
+      "batch": 1,
+      "latency_ms": 1.948411102294922,
+      "throughput_images_s": 513.2387096450832,
+      "speedup": 1.0,
+      "max_abs_error": 0.0,
+      "top1_agreement_pct": 100.0
+    },
+    {
+      "implementation": "TensorRT FP32",
+      "batch": 1,
+      "latency_ms": 0.8330506896972656,
+      "throughput_images_s": 1200.407144928245,
+      "speedup": 2.3388866084523423,
+      "max_abs_error": 0.0032806992530822754,
+      "top1_agreement_pct": 100.0
+    },
+    {
+      "implementation": "TensorRT FP16",
+      "batch": 1,
+      "latency_ms": 0.2937030410766602,
+      "throughput_images_s": 3404.7996109750443,
+      "speedup": 6.633949363113207,
+      "max_abs_error": 0.014121711254119873,
+      "top1_agreement_pct": 100.0
+    },
+    {
+      "implementation": "PyTorch FP32",
+      "batch": 8,
+      "latency_ms": 3.475335693359375,
+      "throughput_images_s": 2301.9359008357933,
+      "speedup": 1.0,
+      "max_abs_error": 0.0,
+      "top1_agreement_pct": 100.0
+    },
+    {
+      "implementation": "TensorRT FP32",
+      "batch": 8,
+      "latency_ms": 1.5483370971679689,
+      "throughput_images_s": 5166.833511018132,
+      "speedup": 2.244560115310832,
+      "max_abs_error": 0.0044182538986206055,
+      "top1_agreement_pct": 100.0
+    },
+    {
+      "implementation": "TensorRT FP16",
+      "batch": 8,
+      "latency_ms": 0.5279585647583008,
+      "throughput_images_s": 15152.704272658966,
+      "speedup": 6.582591751211352,
+      "max_abs_error": 0.021438121795654297,
+      "top1_agreement_pct": 100.0
+    },
+    {
+      "implementation": "PyTorch FP32",
+      "batch": 32,
+      "latency_ms": 7.6123681640625,
+      "throughput_images_s": 4203.685280366489,
+      "speedup": 1.0,
+      "max_abs_error": 0.0,
+      "top1_agreement_pct": 100.0
+    },
+    {
+      "implementation": "TensorRT FP32",
+      "batch": 32,
+      "latency_ms": 5.111302795410157,
+      "throughput_images_s": 6260.634769815502,
+      "speedup": 1.4893205252676964,
+      "max_abs_error": 0.0061185359954833984,
+      "top1_agreement_pct": 100.0
+    },
+    {
+      "implementation": "TensorRT FP16",
+      "batch": 32,
+      "latency_ms": 1.6769447326660156,
+      "throughput_images_s": 19082.322378702505,
+      "speedup": 4.539426980375386,
+      "max_abs_error": 0.028235912322998047,
+      "top1_agreement_pct": 100.0
+    }
+  ]
+}

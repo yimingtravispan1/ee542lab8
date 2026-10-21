@@ -1,0 +1,7 @@
+ninja: Entering directory `/tmp/build'
+[1/6] Compiling C object doca_gpunetio_simple_receive.p/.._.._.._applications_common_utils.c.o
+[2/6] Compiling C object doca_gpunetio_simple_receive.p/gpunetio_simple_receive_main.c.o
+[3/6] Compiling C object doca_gpunetio_simple_receive.p/host_gpunetio_simple_receive_sample.c.o
+[4/6] Compiling C object doca_gpunetio_simple_receive.p/.._.._common.c.o
+[5/6] Compiling Cuda object doca_gpunetio_simple_receive.p/device_gpunetio_simple_receive_kernel.cu.o
+[6/6] Linking target doca_gpunetio_simple_receive

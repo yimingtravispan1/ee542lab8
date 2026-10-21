@@ -1,0 +1,100 @@
+devel-cuda13.0.0-3.5.0-devel-host: Pulling from nvidia/doca/doca
+1ba07b1309cf: Pulling fs layer
+78fb484cd93c: Pulling fs layer
+c75f4ce7b282: Pulling fs layer
+9c9b39ad83d5: Pulling fs layer
+ddc61996788f: Pulling fs layer
+a64f04dffcd8: Pulling fs layer
+32f112e3802c: Pulling fs layer
+13e8f87efde8: Pulling fs layer
+774bac312b01: Pulling fs layer
+3fd353b07f03: Pulling fs layer
+34cdb96c956a: Pulling fs layer
+932162d4fcf6: Pulling fs layer
+0acb0bb33f99: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+492db7b3e492: Pulling fs layer
+43b58e754afc: Pulling fs layer
+5065c92eaa27: Pulling fs layer
+04c165959095: Pulling fs layer
+53a028ab0c2e: Pulling fs layer
+03128c4465b7: Pulling fs layer
+8b441c527d3a: Pulling fs layer
+a90ffdd5d5a2: Pulling fs layer
+137f256f5495: Pulling fs layer
+12757897f85c: Pulling fs layer
+6aabbb378e62: Pulling fs layer
+3b8cd7916795: Pulling fs layer
+9c927baa4fc7: Pulling fs layer
+f10bd504449d: Pulling fs layer
+84fef9f1ca4f: Pulling fs layer
+a063c22f472a: Pulling fs layer
+fbfd97a29133: Pulling fs layer
+abdbbe5f6996: Pulling fs layer
+4f4fb700ef54: Already exists
+137f256f5495: Download complete
+ddc61996788f: Download complete
+12757897f85c: Download complete
+13e8f87efde8: Download complete
+fbfd97a29133: Download complete
+84fef9f1ca4f: Download complete
+43b58e754afc: Download complete
+78fb484cd93c: Download complete
+5065c92eaa27: Download complete
+932162d4fcf6: Download complete
+492db7b3e492: Download complete
+34cdb96c956a: Download complete
+03128c4465b7: Download complete
+c75f4ce7b282: Download complete
+f10bd504449d: Download complete
+9c9b39ad83d5: Download complete
+32f112e3802c: Download complete
+774bac312b01: Download complete
+32f112e3802c: Pull complete
+9c9b39ad83d5: Pull complete
+3b8cd7916795: Download complete
+8b441c527d3a: Download complete
+9c927baa4fc7: Download complete
+abdbbe5f6996: Download complete
+3fd353b07f03: Download complete
+6aabbb378e62: Download complete
+0acb0bb33f99: Download complete
+53a028ab0c2e: Download complete
+ddc61996788f: Pull complete
+13e8f87efde8: Pull complete
+0acb0bb33f99: Pull complete
+a64f04dffcd8: Download complete
+a063c22f472a: Download complete
+1ba07b1309cf: Download complete
+1ba07b1309cf: Pull complete
+84fef9f1ca4f: Pull complete
+492db7b3e492: Pull complete
+932162d4fcf6: Pull complete
+04c165959095: Download complete
+a90ffdd5d5a2: Download complete
+5065c92eaa27: Pull complete
+04c165959095: Pull complete
+a90ffdd5d5a2: Pull complete
+137f256f5495: Pull complete
+78fb484cd93c: Pull complete
+3fd353b07f03: Pull complete
+8b441c527d3a: Pull complete
+4f4fb700ef54: Pull complete
+12757897f85c: Pull complete
+fbfd97a29133: Pull complete
+43b58e754afc: Pull complete
+34cdb96c956a: Pull complete
+03128c4465b7: Pull complete
+c75f4ce7b282: Pull complete
+a64f04dffcd8: Pull complete
+6aabbb378e62: Pull complete
+3b8cd7916795: Pull complete
+abdbbe5f6996: Pull complete
+53a028ab0c2e: Pull complete
+a063c22f472a: Pull complete
+9c927baa4fc7: Pull complete
+f10bd504449d: Pull complete
+774bac312b01: Pull complete
+Digest: sha256:546268c49599c49402b64b8309d487e0434ac1706bd26352dab842aff50eba1b
+Status: Downloaded newer image for nvcr.io/nvidia/doca/doca:devel-cuda13.0.0-3.5.0-devel-host
+nvcr.io/nvidia/doca/doca:devel-cuda13.0.0-3.5.0-devel-host

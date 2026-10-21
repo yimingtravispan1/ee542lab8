@@ -1,0 +1,19 @@
+{
+  "frames": 16,
+  "height": 224,
+  "width": 224,
+  "channels": 3,
+  "layout": "HWC",
+  "dtype": "uint8",
+  "frame_bytes": 150528,
+  "chunk_bytes": 1400,
+  "header_bytes": 22,
+  "packets_per_frame": 108,
+  "total_packets": 1728,
+  "max_ip_packet_bytes": 1450,
+  "magic_hex": "0x45453534",
+  "header_format": "!IIHHIHI",
+  "udp_destination_port": 5000,
+  "shuffled": false
+}
+Saved: /mnt/d/EE542/lab8/data/images.pcap

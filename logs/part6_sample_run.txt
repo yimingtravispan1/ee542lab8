@@ -1,0 +1,4 @@
+[2026-10-20 23:47:45:058105][3240345600][DOCA][INF][CORE][doca_log.cpp:1335] DOCA version 3.5.0098
+[2026-10-20 23:47:45:058299][3240345600][DOCA][INF][GPUNETIO_SIMPLE_RECEIVE][gpunetio_simple_receive_main.c:198][main] Starting the sample
+[2026-10-20 23:47:45:092174][3240345600][DOCA][ERR][GPUNETIO_SIMPLE_RECEIVE][gpunetio_simple_receive_main.c:227][main] CUDA initialization failed: no CUDA-capable device is detected
+[2026-10-20 23:47:45:092192][3240345600][DOCA][INF][GPUNETIO_SIMPLE_RECEIVE][gpunetio_simple_receive_main.c:261][main] Sample finished with errors

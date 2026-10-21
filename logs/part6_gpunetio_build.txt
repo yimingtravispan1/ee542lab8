@@ -1,0 +1,44 @@
+Configuring library
+Compiling src/doca_verbs_dev.cpp -> obj/doca_verbs_dev.o
+Compiling src/doca_verbs_qp.cpp -> obj/doca_verbs_qp.o
+Compiling src/doca_verbs_cq.cpp -> obj/doca_verbs_cq.o
+Compiling src/doca_verbs_device_attr.cpp -> obj/doca_verbs_device_attr.o
+Compiling src/doca_verbs_umem.cpp -> obj/doca_verbs_umem.o
+Compiling src/doca_verbs_srq.cpp -> obj/doca_verbs_srq.o
+Compiling src/doca_verbs_uar.cpp -> obj/doca_verbs_uar.o
+Compiling src/doca_gpunetio.cpp -> obj/doca_gpunetio.o
+Compiling src/doca_gpunetio_log.cpp -> obj/doca_gpunetio_log.o
+Compiling src/doca_gpunetio_high_level.cpp -> obj/doca_gpunetio_high_level.o
+Compiling src/doca_gpunetio_gdrcopy.cpp -> obj/doca_gpunetio_gdrcopy.o
+Compiling src/doca_gpunetio_signal_map.cpp -> obj/doca_gpunetio_signal_map.o
+Compiling src/doca_gpunetio_sdk_wrapper.cpp -> obj/doca_gpunetio_sdk_wrapper.o
+Compiling src/doca_verbs_dev_sdk_wrapper.cpp -> obj/doca_verbs_dev_sdk_wrapper.o
+Compiling src/doca_verbs_umem_sdk_wrapper.cpp -> obj/doca_verbs_umem_sdk_wrapper.o
+Compiling src/doca_verbs_uar_sdk_wrapper.cpp -> obj/doca_verbs_uar_sdk_wrapper.o
+Compiling src/doca_verbs_cq_sdk_wrapper.cpp -> obj/doca_verbs_cq_sdk_wrapper.o
+Compiling src/doca_verbs_qp_sdk_wrapper.cpp -> obj/doca_verbs_qp_sdk_wrapper.o
+Compiling src/doca_verbs_utils.cpp -> obj/doca_verbs_utils.o
+Linking library lib/libdoca_gpunetio_host.so.5.0.0
+Installing library to /work/gpunetio/install/lib and headers to /work/gpunetio/install/include
+make[1]: Entering directory '/work/gpunetio/examples/gpunetio_verbs_put_bw'
+/usr/local/cuda/bin/nvcc -I/work/gpunetio/include -I/work/gpunetio/include/host -I/work/gpunetio/include/common -I../ -I/work/gpunetio/src -I/usr/local/cuda/include  -std=c++17 -arch=sm_120 -I/work/gpunetio/include/device  -c gpunetio_verbs_put_bw_kernel.cu -o build/gpunetio_verbs_put_bw_kernel.o
+g++ -I/work/gpunetio/include -I/work/gpunetio/include/host -I/work/gpunetio/include/common -I../ -I/work/gpunetio/src -I/usr/local/cuda/include  -std=c++17 -fPIC  -c /work/gpunetio/examples/verbs_common.cpp -o build//work/gpunetio/examples/verbs_common.o
+g++ -I/work/gpunetio/include -I/work/gpunetio/include/host -I/work/gpunetio/include/common -I../ -I/work/gpunetio/src -I/usr/local/cuda/include  -std=c++17 -fPIC  -c gpunetio_verbs_put_bw_sample.cpp -o build/gpunetio_verbs_put_bw_sample.o
+g++ -I/work/gpunetio/include -I/work/gpunetio/include/host -I/work/gpunetio/include/common -I../ -I/work/gpunetio/src -I/usr/local/cuda/include  -std=c++17 -fPIC  -c gpunetio_verbs_put_bw_main.cpp -o build/gpunetio_verbs_put_bw_main.o
+/usr/local/cuda/bin/nvcc -I/work/gpunetio/include -I/work/gpunetio/include/host -I/work/gpunetio/include/common -I../ -I/work/gpunetio/src -I/usr/local/cuda/include  -o gpunetio_verbs_put_bw build/gpunetio_verbs_put_bw_kernel.o build//work/gpunetio/examples/verbs_common.o build/gpunetio_verbs_put_bw_sample.o build/gpunetio_verbs_put_bw_main.o -L/work/gpunetio/lib -ldoca_gpunetio_host -L/usr/local/cuda/lib64 -libverbs -lmlx5 -lcuda -lcudart
+make[1]: Leaving directory '/work/gpunetio/examples/gpunetio_verbs_put_bw'
+make[1]: Entering directory '/work/gpunetio/examples/gpunetio_verbs_write_lat'
+/usr/local/cuda/bin/nvcc -I/work/gpunetio/include -I/work/gpunetio/include/host -I/work/gpunetio/include/common -I../ -I/work/gpunetio/src -I/usr/local/cuda/include  -std=c++17 -arch=sm_120 -I/work/gpunetio/include/device  -c gpunetio_verbs_write_lat_kernel.cu -o build/gpunetio_verbs_write_lat_kernel.o
+g++ -I/work/gpunetio/include -I/work/gpunetio/include/host -I/work/gpunetio/include/common -I../ -I/work/gpunetio/src -I/usr/local/cuda/include  -std=c++17 -fPIC  -c /work/gpunetio/examples/verbs_common.cpp -o build//work/gpunetio/examples/verbs_common.o
+g++ -I/work/gpunetio/include -I/work/gpunetio/include/host -I/work/gpunetio/include/common -I../ -I/work/gpunetio/src -I/usr/local/cuda/include  -std=c++17 -fPIC  -c gpunetio_verbs_write_lat_sample.cpp -o build/gpunetio_verbs_write_lat_sample.o
+g++ -I/work/gpunetio/include -I/work/gpunetio/include/host -I/work/gpunetio/include/common -I../ -I/work/gpunetio/src -I/usr/local/cuda/include  -std=c++17 -fPIC  -c gpunetio_verbs_write_lat_main.cpp -o build/gpunetio_verbs_write_lat_main.o
+/usr/local/cuda/bin/nvcc -I/work/gpunetio/include -I/work/gpunetio/include/host -I/work/gpunetio/include/common -I../ -I/work/gpunetio/src -I/usr/local/cuda/include  -o gpunetio_verbs_write_lat build/gpunetio_verbs_write_lat_kernel.o build//work/gpunetio/examples/verbs_common.o build/gpunetio_verbs_write_lat_sample.o build/gpunetio_verbs_write_lat_main.o -L/work/gpunetio/lib -ldoca_gpunetio_host -L/usr/local/cuda/lib64 -libverbs -lmlx5 -lcuda -lcudart
+make[1]: Leaving directory '/work/gpunetio/examples/gpunetio_verbs_write_lat'
+make[1]: Entering directory '/work/gpunetio/examples/gpunetio_verbs_write_bw'
+/usr/local/cuda/bin/nvcc -I/work/gpunetio/include -I/work/gpunetio/include/host -I/work/gpunetio/include/common -I../ -I/work/gpunetio/src -I/usr/local/cuda/include  -std=c++17 -arch=sm_120 -I/work/gpunetio/include/device  -c gpunetio_verbs_write_bw_kernel.cu -o build/gpunetio_verbs_write_bw_kernel.o
+g++ -I/work/gpunetio/include -I/work/gpunetio/include/host -I/work/gpunetio/include/common -I../ -I/work/gpunetio/src -I/usr/local/cuda/include  -std=c++17 -fPIC  -c /work/gpunetio/examples/verbs_common.cpp -o build//work/gpunetio/examples/verbs_common.o
+g++ -I/work/gpunetio/include -I/work/gpunetio/include/host -I/work/gpunetio/include/common -I../ -I/work/gpunetio/src -I/usr/local/cuda/include  -std=c++17 -fPIC  -c gpunetio_verbs_write_bw_sample.cpp -o build/gpunetio_verbs_write_bw_sample.o
+g++ -I/work/gpunetio/include -I/work/gpunetio/include/host -I/work/gpunetio/include/common -I../ -I/work/gpunetio/src -I/usr/local/cuda/include  -std=c++17 -fPIC  -c gpunetio_verbs_write_bw_main.cpp -o build/gpunetio_verbs_write_bw_main.o
+/usr/local/cuda/bin/nvcc -I/work/gpunetio/include -I/work/gpunetio/include/host -I/work/gpunetio/include/common -I../ -I/work/gpunetio/src -I/usr/local/cuda/include  -o gpunetio_verbs_write_bw build/gpunetio_verbs_write_bw_kernel.o build//work/gpunetio/examples/verbs_common.o build/gpunetio_verbs_write_bw_sample.o build/gpunetio_verbs_write_bw_main.o -L/work/gpunetio/lib -ldoca_gpunetio_host -L/usr/local/cuda/lib64 -libverbs -lmlx5 -lcuda -lcudart
+make[1]: Leaving directory '/work/gpunetio/examples/gpunetio_verbs_write_bw'
+Installing examples to /work/gpunetio/install/examples
