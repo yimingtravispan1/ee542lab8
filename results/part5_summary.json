@@ -1,0 +1,61 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "engine": "resnet18_fp16.engine",
+  "preprocessing": "ImageClassification(\n    crop_size=[224]\n    resize_size=[256]\n    mean=[0.485, 0.456, 0.406]\n    std=[0.229, 0.224, 0.225]\n    interpolation=InterpolationMode.BILINEAR\n)",
+  "preprocessing_device": "cuda",
+  "classification_batch": 16,
+  "warmup": 30,
+  "repeats": 200,
+  "copy_timing": "CUDA events around repeated pinned H2D copies",
+  "excluded_from_copy_timing": [
+    "file reading",
+    "pinned-memory allocation and CPU staging",
+    "GPU allocation",
+    "preprocessing",
+    "inference"
+  ],
+  "classification": [
+    {
+      "mode": "ordered",
+      "matched_frames": 16,
+      "total_frames": 16,
+      "max_abs_logit_difference": 0.0
+    },
+    {
+      "mode": "shuffled",
+      "matched_frames": 16,
+      "total_frames": 16,
+      "max_abs_logit_difference": 0.0
+    },
+    {
+      "mode": "duplicates",
+      "matched_frames": 16,
+      "total_frames": 16,
+      "max_abs_logit_difference": 0.0
+    }
+  ],
+  "copy_results": [
+    {
+      "batch": 1,
+      "bytes": 150528,
+      "copy_ms": 0.007419999837875366,
+      "amortized_ms_per_image": 0.007419999837875366,
+      "effective_GB_s": 20.286792896090144
+    },
+    {
+      "batch": 8,
+      "bytes": 1204224,
+      "copy_ms": 0.028415200710296632,
+      "amortized_ms_per_image": 0.003551900088787079,
+      "effective_GB_s": 42.37957043758038
+    },
+    {
+      "batch": 16,
+      "bytes": 2408448,
+      "copy_ms": 0.055783839225769044,
+      "amortized_ms_per_image": 0.0034864899516105653,
+      "effective_GB_s": 43.17465476430368
+    }
+  ],
+  "all_classes_match": true
+}

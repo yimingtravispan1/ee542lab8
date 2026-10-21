@@ -1,0 +1,68 @@
+
+=== ordered ===
+Frame 00: original=107, received=107, PASS
+Frame 01: original=107, received=107, PASS
+Frame 02: original=107, received=107, PASS
+Frame 03: original=107, received=107, PASS
+Frame 04: original=107, received=107, PASS
+Frame 05: original=107, received=107, PASS
+Frame 06: original=107, received=107, PASS
+Frame 07: original=107, received=107, PASS
+Frame 08: original=107, received=107, PASS
+Frame 09: original=107, received=107, PASS
+Frame 10: original=107, received=107, PASS
+Frame 11: original=107, received=107, PASS
+Frame 12: original=107, received=107, PASS
+Frame 13: original=107, received=107, PASS
+Frame 14: original=107, received=107, PASS
+Frame 15: original=107, received=107, PASS
+Class agreement: 16/16
+Max logit difference: 0.00000000
+
+=== shuffled ===
+Frame 00: original=107, received=107, PASS
+Frame 01: original=107, received=107, PASS
+Frame 02: original=107, received=107, PASS
+Frame 03: original=107, received=107, PASS
+Frame 04: original=107, received=107, PASS
+Frame 05: original=107, received=107, PASS
+Frame 06: original=107, received=107, PASS
+Frame 07: original=107, received=107, PASS
+Frame 08: original=107, received=107, PASS
+Frame 09: original=107, received=107, PASS
+Frame 10: original=107, received=107, PASS
+Frame 11: original=107, received=107, PASS
+Frame 12: original=107, received=107, PASS
+Frame 13: original=107, received=107, PASS
+Frame 14: original=107, received=107, PASS
+Frame 15: original=107, received=107, PASS
+Class agreement: 16/16
+Max logit difference: 0.00000000
+
+=== duplicates ===
+Frame 00: original=107, received=107, PASS
+Frame 01: original=107, received=107, PASS
+Frame 02: original=107, received=107, PASS
+Frame 03: original=107, received=107, PASS
+Frame 04: original=107, received=107, PASS
+Frame 05: original=107, received=107, PASS
+Frame 06: original=107, received=107, PASS
+Frame 07: original=107, received=107, PASS
+Frame 08: original=107, received=107, PASS
+Frame 09: original=107, received=107, PASS
+Frame 10: original=107, received=107, PASS
+Frame 11: original=107, received=107, PASS
+Frame 12: original=107, received=107, PASS
+Frame 13: original=107, received=107, PASS
+Frame 14: original=107, received=107, PASS
+Frame 15: original=107, received=107, PASS
+Class agreement: 16/16
+Max logit difference: 0.00000000
+
+=== Pinned-memory CPU -> GPU copy ===
+Batch  1: 150528 bytes | 0.007420 ms | 20.287 GB/s
+Batch  8: 1204224 bytes | 0.028415 ms | 42.380 GB/s
+Batch 16: 2408448 bytes | 0.055784 ms | 43.175 GB/s
+
+All received images have the same classes as their originals.
+Part 5 results saved in results/.

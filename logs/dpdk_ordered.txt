@@ -1,0 +1,30 @@
+EAL: Detected CPU lcores: 28
+EAL: Detected NUMA nodes: 1
+EAL: Detected shared linkage of DPDK
+EAL: Multi-process socket /var/run/dpdk/rte/mp_socket
+EAL: Selected IOVA mode 'VA'
+TELEMETRY: No legacy callbacks, legacy socket not created
+Receiving from PCAP; idle timeout = 2 seconds
+Frame 0 complete (1/16)
+Frame 1 complete (2/16)
+Frame 2 complete (3/16)
+Frame 3 complete (4/16)
+Frame 4 complete (5/16)
+Frame 5 complete (6/16)
+Frame 6 complete (7/16)
+Frame 7 complete (8/16)
+Frame 8 complete (9/16)
+Frame 9 complete (10/16)
+Frame 10 complete (11/16)
+Frame 11 complete (12/16)
+Frame 12 complete (13/16)
+Frame 13 complete (14/16)
+Frame 14 complete (15/16)
+Frame 15 complete (16/16)
+
+Packets received: 1728
+Accepted chunks: 1728
+Dropped invalid/unrelated packets: 0
+Duplicate chunks ignored: 0
+Complete frames: 16/16
+Saved: data/frames_rx_ordered.bin

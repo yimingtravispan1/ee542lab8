@@ -1,0 +1,13 @@
+Tue Oct 20 23:55:23 2026 [INFO] [/work/gpunetio/examples/verbs_common.cpp]: 256: create_verbs_resources(): Setting GPU device 0 at 0000:01:00.0
+Tue Oct 20 23:55:23 2026 [WARNING] [src/doca_gpunetio_sdk_wrapper.cpp]: 305: doca_gpu_sdk_wrapper_create(): Env var DOCA_SDK_LIB_PATH not set (null). DOCA SDK is not in use
+Tue Oct 20 23:55:23 2026 [INFO] [src/doca_gpunetio.cpp]: 151: doca_gpu_create(): Use DOCA GPUNetIO open
+Tue Oct 20 23:55:23 2026 [ERR] [src/doca_gpunetio_gdrcopy.cpp]: 131: doca_gpu_gdrcopy_ftable_init(): Failed to open libgdrapi.so.2 then libgdrapi.so
+Tue Oct 20 23:55:23 2026 [ERR] [src/doca_gpunetio_gdrcopy.cpp]: 182: doca_gpu_init_gdrcopy(): Error in doca_gpu_gdrcopy_ftable_init
+Tue Oct 20 23:55:23 2026 [INFO] [src/doca_gpunetio_gdrcopy.cpp]: 214: doca_gpu_gdrcopy_is_supported(): GDRCopy usage is disabled
+Tue Oct 20 23:55:23 2026 [ERR] [/work/gpunetio/examples/verbs_common.cpp]: 170: open_ib_device(): Failed to get RDMA devices list, ibdev_list null
+Tue Oct 20 23:55:23 2026 [ERR] [/work/gpunetio/examples/verbs_common.cpp]: 266: create_verbs_resources(): Failed to create doca network context
+Tue Oct 20 23:55:23 2026 [ERR] [/work/gpunetio/examples/verbs_common.cpp]: 368: destroy_verbs_resources(): Failed to destroy doca verbs high-level qp
+Tue Oct 20 23:55:23 2026 [ERR] [/work/gpunetio/examples/verbs_common.cpp]: 358: create_verbs_resources(): Failed to destroy resources: 6
+Tue Oct 20 23:55:23 2026 [ERR] [gpunetio_verbs_write_lat_sample.cpp]: 276: verbs_server(): Failed to create local rdma resources: 18
+Tue Oct 20 23:55:23 2026 [ERR] [gpunetio_verbs_write_lat_main.cpp]: 108: main(): verbs_server() failed
+Tue Oct 20 23:55:23 2026 [INFO] [gpunetio_verbs_write_lat_main.cpp]: 125: main(): Sample finished with errors

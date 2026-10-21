@@ -1,0 +1,48 @@
+
+=== ordered ===
+Expected bytes: 2408448
+Received bytes: 2408448
+Frame 00: PASS
+Frame 01: PASS
+Frame 02: PASS
+Frame 03: PASS
+Frame 04: PASS
+Frame 05: PASS
+Frame 06: PASS
+Frame 07: PASS
+Frame 08: PASS
+Frame 09: PASS
+Frame 10: PASS
+Frame 11: PASS
+Frame 12: PASS
+Frame 13: PASS
+Frame 14: PASS
+Frame 15: PASS
+Byte-for-byte identical: True
+Original SHA256: d5f92830f576139756be662c8dba4d69b5b2b975933b7398a4a5d2db2746c2f3
+Received SHA256: d5f92830f576139756be662c8dba4d69b5b2b975933b7398a4a5d2db2746c2f3
+
+=== shuffled ===
+Expected bytes: 2408448
+Received bytes: 2408448
+Frame 00: PASS
+Frame 01: PASS
+Frame 02: PASS
+Frame 03: PASS
+Frame 04: PASS
+Frame 05: PASS
+Frame 06: PASS
+Frame 07: PASS
+Frame 08: PASS
+Frame 09: PASS
+Frame 10: PASS
+Frame 11: PASS
+Frame 12: PASS
+Frame 13: PASS
+Frame 14: PASS
+Frame 15: PASS
+Byte-for-byte identical: True
+Original SHA256: d5f92830f576139756be662c8dba4d69b5b2b975933b7398a4a5d2db2746c2f3
+Received SHA256: d5f92830f576139756be662c8dba4d69b5b2b975933b7398a4a5d2db2746c2f3
+
+All ordered and shuffled frames match exactly.

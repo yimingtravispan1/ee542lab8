@@ -1,0 +1,20 @@
+[2026-10-20 23:45:36:124052][2897707008][DOCA][INF][CORE][doca_log.cpp:1335] DOCA version 3.5.0098
+[2026-10-20 23:45:36:124095][2897707008][DOCA][INF][GPUNETIO_SIMPLE_RECEIVE][gpunetio_simple_receive_main.c:198][main] Starting the sample
+
+
+Usage: doca_gpunetio_simple_receive [DOCA Flags] [Program Flags]
+
+DOCA Flags:
+  -h, --help                        Print a help synopsis
+  -v, --version                     Print program version information
+  -l, --log-level                   Set the (numeric) log level for the program <10=DISABLE, 20=CRITICAL, 30=ERROR, 40=WARNING, 50=INFO, 60=DEBUG, 70=TRACE>
+  --sdk-log-level                   Set the SDK (numeric) log level for the program <10=DISABLE, 20=CRITICAL, 30=ERROR, 40=WARNING, 50=INFO, 60=DEBUG, 70=TRACE>
+  --log-filter                      Filter logs from specific modules, separated by comma
+  -j, --json <path>                 Parse command line flags from an input json file
+
+Program Flags:
+  -e, --exec-scope                  Receive kernel execution scope: per-thread (0) per-warp (1) per-block (2).
+  -g, --gpu <GPU PCIe address>      GPU PCIe address to be used by the sample
+  -n, --nic <NIC PCIe address>      DOCA device PCIe address used by the sample
+
+

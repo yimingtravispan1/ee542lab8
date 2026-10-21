@@ -1,0 +1,9 @@
+Unable to find image 'ubuntu:22.04' locally
+22.04: Pulling from library/ubuntu
+cf1a5487baaf: Pulling fs layer
+637115e4c229: Download complete
+cf1a5487baaf: Download complete
+cf1a5487baaf: Pull complete
+Digest: sha256:0a9887931b0e38af2e3487ed39e29436b0535c4f3f52e57745baaf79d1898956
+Status: Downloaded newer image for ubuntu:22.04
+GPU 0: NVIDIA GeForce RTX 5070 (UUID: GPU-0a1ae84c-7fea-416d-2d65-ed444db7fa6b)

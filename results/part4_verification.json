@@ -1,0 +1,54 @@
+[
+  {
+    "mode": "ordered",
+    "expected_bytes": 2408448,
+    "received_bytes": 2408448,
+    "original_sha256": "d5f92830f576139756be662c8dba4d69b5b2b975933b7398a4a5d2db2746c2f3",
+    "received_sha256": "d5f92830f576139756be662c8dba4d69b5b2b975933b7398a4a5d2db2746c2f3",
+    "byte_identical": true,
+    "per_frame_match": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "mode": "shuffled",
+    "expected_bytes": 2408448,
+    "received_bytes": 2408448,
+    "original_sha256": "d5f92830f576139756be662c8dba4d69b5b2b975933b7398a4a5d2db2746c2f3",
+    "received_sha256": "d5f92830f576139756be662c8dba4d69b5b2b975933b7398a4a5d2db2746c2f3",
+    "byte_identical": true,
+    "per_frame_match": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  }
+]
