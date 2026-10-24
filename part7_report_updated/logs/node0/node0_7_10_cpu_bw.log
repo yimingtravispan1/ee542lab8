@@ -1,0 +1,30 @@
+HOST=node0.yxia-321370.doca-gpu-pg0.wisc.cloudlab.us
+2026-10-24T03:08:13+00:00
+COMMAND: ib_write_bw -d rocep65s0 -x 3 --report_gbits
+
+************************************
+* Waiting for client to connect... *
+************************************
+---------------------------------------------------------------------------------------
+                    RDMA_Write BW Test
+ Dual-port       : OFF		Device         : rocep65s0
+ Number of qps   : 1		Transport type : IB
+ Connection type : RC		Using SRQ      : OFF
+ PCIe relax order: ON
+ ibv_wr* API     : ON
+ CQ Moderation   : 1
+ Mtu             : 4096[B]
+ Link type       : Ethernet
+ GID index       : 3
+ Max inline data : 0[B]
+ rdma_cm QPs	 : OFF
+ Data ex. method : Ethernet
+---------------------------------------------------------------------------------------
+ local address: LID 0000 QPN 0x0039 PSN 0xad0ce8 RKey 0x182e00 VAddr 0x0078a37edad000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:10:01:01
+ remote address: LID 0000 QPN 0x0037 PSN 0x81e40f RKey 0x182e00 VAddr 0x00716077aa0000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:10:01:02
+---------------------------------------------------------------------------------------
+ #bytes     #iterations    BW peak[Gb/sec]    BW average[Gb/sec]   MsgRate[Mpps]
+ 65536      5000             153.42             109.56 		   0.208974
+---------------------------------------------------------------------------------------

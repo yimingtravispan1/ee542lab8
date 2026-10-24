@@ -1,0 +1,30 @@
+=== Step 7.2: Server Information ===
+2026-10-24T03:03:48+00:00
+node0.yxia-321370.doca-gpu-pg0.wisc.cloudlab.us
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eno1             DOWN           
+eno2             DOWN           
+eno33np0         UP             128.105.146.29/22 metric 1024 fe80::e63d:1aff:fe13:5180/64 
+eno34np1         DOWN           
+enp65s0np0       UP             10.10.1.1/24 fe80::966d:aeff:fe61:9eba/64 
+docker0          DOWN           172.17.0.1/16 
+Filesystem                            Size  Used Avail Use% Mounted on
+/dev/mapper/emulab-docker_data_node0   92G  240K   87G   1% /mydata
+PING 10.10.1.1 (10.10.1.1) 56(84) bytes of data.
+64 bytes from 10.10.1.1: icmp_seq=1 ttl=64 time=0.045 ms
+64 bytes from 10.10.1.1: icmp_seq=2 ttl=64 time=0.021 ms
+64 bytes from 10.10.1.1: icmp_seq=3 ttl=64 time=0.015 ms
+64 bytes from 10.10.1.1: icmp_seq=4 ttl=64 time=0.018 ms
+
+--- 10.10.1.1 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3065ms
+rtt min/avg/max/mdev = 0.015/0.024/0.045/0.011 ms
+PING 10.10.1.2 (10.10.1.2) 56(84) bytes of data.
+64 bytes from 10.10.1.2: icmp_seq=1 ttl=64 time=0.210 ms
+64 bytes from 10.10.1.2: icmp_seq=2 ttl=64 time=0.053 ms
+64 bytes from 10.10.1.2: icmp_seq=3 ttl=64 time=0.038 ms
+64 bytes from 10.10.1.2: icmp_seq=4 ttl=64 time=0.038 ms
+
+--- 10.10.1.2 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3070ms
+rtt min/avg/max/mdev = 0.038/0.084/0.210/0.072 ms

@@ -1,0 +1,195 @@
+=== Step 7.4: Hardware ===
+2026-10-24T03:04:19+00:00
+--- Network Interfaces ---
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eno1             DOWN           
+eno2             DOWN           
+eno33np0         UP             128.105.146.29/22 metric 1024 fe80::e63d:1aff:fe13:5180/64 
+eno34np1         DOWN           
+enp65s0np0       UP             10.10.1.1/24 fe80::966d:aeff:fe61:9eba/64 
+docker0          DOWN           172.17.0.1/16 fe80::1c7e:68ff:fe2e:660b/64 
+--- NIC and Firmware ---
+driver: mlx5_core
+version: 6.8.0-147-generic
+firmware-version: 20.38.1002 (DEL0000000010)
+expansion-rom-version: 
+bus-info: 0000:41:00.0
+supports-statistics: yes
+supports-test: yes
+supports-eeprom-access: no
+supports-register-dump: no
+supports-priv-flags: yes
+--- RDMA Devices ---
+    device          	   node GUID
+    ------          	----------------
+    rocep65s0       	946dae0300619eba
+--- NVIDIA Network Card ---
+41:00.0 Ethernet controller: Mellanox Technologies MT28908 Family [ConnectX-6]
+--- Linux Kernel ---
+6.8.0-147-generic
+--- GPU PCI Address ---
+pci.bus_id
+00000000:25:00.0
+--- PCIe Topology ---
+	[4mGPU0	NIC0	CPU Affinity	NUMA Affinity	GPU NUMA ID[0m
+GPU0	 X 	NODE	0-15,32-47	0		N/A
+NIC0	NODE	 X 				
+
+Legend:
+
+  X    = Self
+  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)
+  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node
+  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)
+  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)
+  PIX  = Connection traversing at most a single PCIe bridge
+  NV#  = Connection traversing a bonded set of # NVLinks
+
+NIC Legend:
+
+  NIC0: rocep65s0
+
+--- PCIe Tree ---
+-+-[0000:00]-+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex
+ |           +-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU
+ |           +-01.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-01.1-[01]----00.0  Broadcom / LSI MegaRAID Tri-Mode SAS3416
+ |           +-02.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-03.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-04.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-05.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-07.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-07.1-[02]--+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function
+ |           |            \-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+ |           +-08.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-08.1-[03]--+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SSP
+ |           |            +-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+ |           |            \-00.3  Advanced Micro Devices, Inc. [AMD] Starship USB 3.0 Host Controller
+ |           +-14.0  Advanced Micro Devices, Inc. [AMD] FCH SMBus Controller
+ |           +-14.3  Advanced Micro Devices, Inc. [AMD] FCH LPC Bridge
+ |           +-18.0  Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 0
+ |           +-18.1  Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 1
+ |           +-18.2  Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 2
+ |           +-18.3  Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 3
+ |           +-18.4  Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 4
+ |           +-18.5  Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 5
+ |           +-18.6  Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 6
+ |           +-18.7  Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 7
+ |           +-19.0  Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 0
+ |           +-19.1  Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 1
+ |           +-19.2  Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 2
+ |           +-19.3  Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 3
+ |           +-19.4  Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 4
+ |           +-19.5  Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 5
+ |           +-19.6  Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 6
+ |           \-19.7  Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 7
+ +-[0000:20]-+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex
+ |           +-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU
+ |           +-01.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-01.1-[21]--
+ |           +-01.2-[22]----00.0  Samsung Electronics Co Ltd NVMe SSD Controller PM173X
+ |           +-01.3-[23]--
+ |           +-01.4-[24]--
+ |           +-02.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-03.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-03.1-[25]----00.0  NVIDIA Corporation GA100GL [A30 PCIe]
+ |           +-04.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-05.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-07.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-07.1-[26]--+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function
+ |           |            \-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+ |           +-08.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           \-08.1-[27]--+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SSP
+ |                        +-00.1  Advanced Micro Devices, Inc. [AMD] Starship/Matisse Cryptographic Coprocessor PSPCPP
+ |                        +-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+ |                        \-00.3  Advanced Micro Devices, Inc. [AMD] Starship USB 3.0 Host Controller
+ +-[0000:40]-+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex
+ |           +-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU
+ |           +-01.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-01.1-[41]----00.0  Mellanox Technologies MT28908 Family [ConnectX-6]
+ |           +-02.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-03.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-04.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-05.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-07.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-07.1-[42]--+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function
+ |           |            \-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+ |           +-08.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           \-08.1-[43]--+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SSP
+ |                        \-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+ +-[0000:60]-+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex
+ |           +-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU
+ |           +-01.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-02.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-03.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-03.1-[63]--+-00.0  Broadcom Inc. and subsidiaries BCM57414 NetXtreme-E 10Gb/25Gb RDMA Ethernet Controller
+ |           |            \-00.1  Broadcom Inc. and subsidiaries BCM57414 NetXtreme-E 10Gb/25Gb RDMA Ethernet Controller
+ |           +-04.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-05.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-05.2-[61-62]----00.0-[62]----00.0  Matrox Electronics Systems Ltd. Integrated Matrox G200eW3 Graphics Controller
+ |           +-07.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-07.1-[64]--+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function
+ |           |            \-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+ |           +-08.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           \-08.1-[65]--+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SSP
+ |                        \-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+ +-[0000:80]-+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex
+ |           +-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU
+ |           +-01.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-02.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-03.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-04.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-05.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-07.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-07.1-[81]--+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function
+ |           |            \-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+ |           +-08.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           \-08.1-[82]--+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SSP
+ |                        \-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+ +-[0000:a0]-+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex
+ |           +-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU
+ |           +-01.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-02.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-03.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-04.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-05.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-07.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-07.1-[a1]--+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function
+ |           |            \-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+ |           +-08.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           \-08.1-[a2]--+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SSP
+ |                        +-00.1  Advanced Micro Devices, Inc. [AMD] Starship/Matisse Cryptographic Coprocessor PSPCPP
+ |                        \-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+ +-[0000:c0]-+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex
+ |           +-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU
+ |           +-01.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-02.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-03.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-03.1-[c1]--
+ |           +-03.2-[c2]--
+ |           +-03.3-[c3]--
+ |           +-03.4-[c4]--
+ |           +-04.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-05.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-07.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-07.1-[c5]--+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function
+ |           |            \-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+ |           +-08.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+ |           +-08.1-[c6]--+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SSP
+ |           |            \-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+ |           \-08.3-[c7]----00.0  Advanced Micro Devices, Inc. [AMD] FCH SATA Controller [AHCI mode]
+ \-[0000:e0]-+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex
+             +-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU
+             +-01.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+             +-02.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+             +-03.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+             +-04.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+             +-05.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+             +-05.1-[e1]--+-00.0  Broadcom Inc. and subsidiaries NetXtreme BCM5720 Gigabit Ethernet PCIe
+             |            \-00.1  Broadcom Inc. and subsidiaries NetXtreme BCM5720 Gigabit Ethernet PCIe
+             +-07.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+             +-07.1-[e2]--+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function
+             |            \-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+             +-08.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+             \-08.1-[e3]--+-00.0  Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SSP
+                          \-00.2  Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA

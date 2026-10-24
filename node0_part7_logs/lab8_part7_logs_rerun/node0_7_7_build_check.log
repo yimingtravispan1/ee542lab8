@@ -1,0 +1,30 @@
+=== Step 7.7: GPUNetIO Build ===
+2026-10-24T03:05:41+00:00
+--- Git Commit ---
+b2b7a291ec70fdeeb1b27ba4b0ab8c8e260a729b
+--- Installed Examples ---
+total 352K
+-rwxr-xr-x 1 yxia doc-team3 103K Oct 24 02:21 gpunetio_verbs_put_bw
+-rwxr-xr-x 1 yxia doc-team3  78K Oct 24 02:21 gpunetio_verbs_write_bw
+-rwxr-xr-x 1 yxia doc-team3 156K Oct 24 02:21 gpunetio_verbs_write_lat
+--- Required Executables ---
+-rwxr-xr-x 1 yxia doc-team3 105144 Oct 24 02:21 /users/yxia/gpunetio/install/examples/gpunetio_verbs_put_bw
+-rwxr-xr-x 1 yxia doc-team3  79216 Oct 24 02:21 /users/yxia/gpunetio/install/examples/gpunetio_verbs_write_bw
+-rwxr-xr-x 1 yxia doc-team3 159456 Oct 24 02:21 /users/yxia/gpunetio/install/examples/gpunetio_verbs_write_lat
+--- Dynamic Libraries ---
+	linux-vdso.so.1 (0x00007ffeed72f000)
+	libdoca_gpunetio_host.so.5 => /users/yxia/gpunetio/install/lib/libdoca_gpunetio_host.so.5 (0x0000787e3f27d000)
+	libibverbs.so.1 => /lib/x86_64-linux-gnu/libibverbs.so.1 (0x0000787e3f250000)
+	libcuda.so.1 => /lib/x86_64-linux-gnu/libcuda.so.1 (0x0000787e39600000)
+	libcudart.so.13 => /usr/local/cuda/targets/x86_64-linux/lib/libcudart.so.13 (0x0000787e39200000)
+	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x0000787e38e00000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x0000787e395d0000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x0000787e38a00000)
+	libmlx5.so.1 => /lib/x86_64-linux-gnu/libmlx5.so.1 (0x0000787e39548000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x0000787e39117000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000787e3f39b000)
+	libnl-route-3.so.200 => /lib/x86_64-linux-gnu/libnl-route-3.so.200 (0x0000787e394b9000)
+	libnl-3.so.200 => /lib/x86_64-linux-gnu/libnl-3.so.200 (0x0000787e390f5000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x0000787e394b2000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x0000787e390f0000)
+	librt.so.1 => /lib/x86_64-linux-gnu/librt.so.1 (0x0000787e390eb000)

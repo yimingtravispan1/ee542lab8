@@ -1,0 +1,28 @@
+HOST=node1.yxia-321370.doca-gpu-pg0.wisc.cloudlab.us
+2026-10-24T03:08:06+00:00
+COMMAND: ib_write_lat -d rocep65s0 -x 3 10.10.1.1
+Conflicting CPU frequency values detected: 2721.247000 != 2994.410000. CPU Frequency is not max.
+Conflicting CPU frequency values detected: 2713.430000 != 2994.410000. CPU Frequency is not max.
+---------------------------------------------------------------------------------------
+                    RDMA_Write Latency Test
+ Dual-port       : OFF		Device         : rocep65s0
+ Number of qps   : 1		Transport type : IB
+ Connection type : RC		Using SRQ      : OFF
+ PCIe relax order: OFF
+ ibv_wr* API     : ON
+ TX depth        : 1
+ Mtu             : 4096[B]
+ Link type       : Ethernet
+ GID index       : 3
+ Max inline data : 220[B]
+ rdma_cm QPs	 : OFF
+ Data ex. method : Ethernet
+---------------------------------------------------------------------------------------
+ local address: LID 0000 QPN 0x0036 PSN 0x3c246a RKey 0x17fcbb VAddr 0x0060f70509b000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:10:01:02
+ remote address: LID 0000 QPN 0x0038 PSN 0xa3704c RKey 0x17c584 VAddr 0x00561189586000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:10:01:01
+---------------------------------------------------------------------------------------
+ #bytes #iterations    t_min[usec]    t_max[usec]  t_typical[usec]    t_avg[usec]    t_stdev[usec]   99% percentile[usec]   99.9% percentile[usec] 
+ 2       1000          2.41           3.85         2.49     	       2.50        	0.05   		2.63    		3.85   
+---------------------------------------------------------------------------------------
