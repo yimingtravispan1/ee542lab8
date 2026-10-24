@@ -1,0 +1,6 @@
+measurement,message_bytes,iterations,value,units
+one_way_latency_avg_client,2,1000,2.5,microseconds
+one_way_latency_avg_server,2,1000,2.54,microseconds
+average_bandwidth,65536,5000,109.56,Gbps
+peak_bandwidth,65536,5000,153.42,Gbps
+message_rate,65536,5000,0.208974,Mpps
